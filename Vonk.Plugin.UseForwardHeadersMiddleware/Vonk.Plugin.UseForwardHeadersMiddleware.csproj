@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="..\Vonk.Plugin.ExampleOperation.props" />
+  <Import Project="..\Vonk.Plugin.UseForwardHeadersMiddleware.props" />
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>

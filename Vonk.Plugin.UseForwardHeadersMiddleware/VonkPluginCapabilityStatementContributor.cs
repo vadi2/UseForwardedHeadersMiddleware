@@ -6,7 +6,7 @@ using Vonk.Core.Model.Capability;
 using Vonk.Core.Pluggability.ContextAware;
 using Vonk.Core.Support;
 
-namespace Vonk.Plugin.ExampleOperation
+namespace Vonk.Plugin.UseForwardHeadersMiddleware
 {
     // The ContextAware attribute lets implementations choose for which information models (e.g. FHIR STU3, R4) the service should be made available
     [ContextAware(InformationModels = new[] { VonkConstants.Model.FhirR3, VonkConstants.Model.FhirR4 })]
@@ -21,7 +21,7 @@ namespace Vonk.Plugin.ExampleOperation
             _supportedInteractionOptions = optionAccessor.Value;
         }
 
-        // Make the $test operation appear in the CapabilityStatement, if it is declared as supported in the SupportedOperationsOptions 
+        // Make the $test operation appear in the CapabilityStatement, if it is declared as supported in the SupportedOperationsOptions
         // See http://docs.simplifier.net/vonk/configuration/appsettings.html - Enable or disable interactions
         public void ContributeToCapabilityStatement(ICapabilityStatementBuilder builder)
         {

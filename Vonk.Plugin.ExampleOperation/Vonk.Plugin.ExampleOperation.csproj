@@ -11,6 +11,7 @@
     <PackageReference Include="Vonk.Core" Version="$(VonkVersion)" >
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.HttpOverrides" Version="2.2.0" />
   </ItemGroup>
 
 </Project>

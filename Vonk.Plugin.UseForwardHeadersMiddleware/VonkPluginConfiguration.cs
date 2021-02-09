@@ -5,7 +5,7 @@ using Vonk.Core.Pluggability;
 
 namespace Vonk.Plugin.UseForwardHeadersMiddleware {
     [VonkConfiguration (order: 900)] // Needs to be configured before the HttpToVonkConfiguration
-    public class CustomContentTypeMiddlewareConfiguration {
+    public class UseForwardHeadersMiddlewareConfiguration {
         public static IServiceCollection ConfigureServices (IServiceCollection services) {
             return services;
         }
